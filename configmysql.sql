@@ -3,9 +3,9 @@
 -- password is in the clear here though, so that is bad
 -- SQL commands can be lower case
 create user if not exists 'dbuser'@'%' identified by 'abc123';
-grant all privileges on *.* to 'dbuser1'@'%';
+grant all privileges on *.* to 'dbuser'@'%';
 create user if not exists 'dbuser'@'localhost' identified by 'abc123';
-grant all privileges on *.* to 'dbuser1'@'localhost';
+grant all privileges on *.* to 'dbuser'@'localhost';
 
 -- the next commands do the same thing as the mysql_secure_installation command
 -- mysql_secure_installation is just a bash shell script. so dig into it and see

@@ -40,12 +40,6 @@ package { 'php-mysql':
   require => [Package['apache2']]
 }
 
-file { '/var/www/html/phpinfo.php':
-  source => '/home/jaxberg/inet4031-puppet-testing/files/phpinfo.php',
-  notify  => Service['apache2'],
-  require => [Package['apache2']]
-}
-
 package { 'mariadb-server':
   ensure => installed
 }
